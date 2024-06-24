@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Cyberpunk";
+  src: url("Cyberpunk.otf");
+}
+.logo {
+  font-family: "Cyberpunk";
+  color: green;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
