@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/foundation/logo.sass","sass/style.sass"],"names":[],"mappings":"AAAA;EACC;EACA;;AAGD;EACC;EACA;EACA;;;ACJD;EACC","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["sass/foundation/skills.sass","sass/foundation/projects.sass","sass/foundation/contact.sass","sass/foundation/logo.sass","sass/style.sass"],"names":[],"mappings":"AAAQ;ACAA;ACAA;ACAR;EACC;EACA;;AAGD;EACC;EACA;EACA;EACA;EACA;;;AAED;AAAA;EAEC;EACA;EACA;EACA;EACA;;;ACdD;EACC;EACA;;;AJJD;EACE;EACA;;;ACFF;EACE;EACA;;;ACFF;EACE;EACA","file":"style.css"}

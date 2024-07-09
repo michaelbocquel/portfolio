@@ -1,15 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @font-face {
   font-family: "Cyberpunk";
   src: url("Cyberpunk.otf");
 }
 .logo {
   font-family: "Cyberpunk";
-  color: green;
+  position: relative;
+  background-color: green;
   text-align: center;
+  font-size: 3rem;
+}
+
+.logo::before,
+.logo::after {
+  content: "nismo dev";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 body {
   background-color: black;
+  color: white;
+}
+
+.skills {
+  background-color: grey;
+  font-family: "Orbitron";
+}
+
+.projects {
+  background-color: grey;
+  font-family: "Orbitron";
+}
+
+.contact {
+  background-color: grey;
+  font-family: "Orbitron";
 }
 
 /*# sourceMappingURL=style.css.map */
