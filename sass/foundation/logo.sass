@@ -1,21 +1,51 @@
-@font-face 
+@font-face
 	font-family: "Cyberpunk"
 	src: url("Cyberpunk.otf")
 
-  
-.logo
-	font-family: "Cyberpunk"
+
+.logo 
+	color: #ffd100
 	position: relative
-	background-color: blue
+	font-size: 12vw
+	font-family: "Cyberpunk"
 	text-align: center
-	font-size: 3rem
+	margin-bottom: 0.5em
+
 
 .logo::before,
-.logo::after
+.logo::after 
 	content: "nismo dev"
 	position: absolute
 	top: 0px
 	left: 0px
 	width: 100%
+	height: 100%
+
+
+.logo::before 
+	left: -6px
+	background: black
+
+	animation: glitch 1.3s infinite linear alternate-reverse
+
+.logo::after 
+	left: -12px
+	background: black
+	animation: glitch 2.2s infinite linear alternate
+
+
+@keyframes glitch 
+	0% 
+		clip-path: inset(40% 0 61% 0)
+	20% 
+		clip-path: inset(92% 0 1% 0)
+	40% 
+		clip-path: inset(43% 0 1% 0)
+	60% 
+		clip-path: inset(25% 0 58% 0)
+	80% 
+		clip-path: inset(94% 0 7% 0)
+	100% 
+		clip-path: inset(78% 0 43% 0)
 
 	
