@@ -72,7 +72,7 @@ body {
 }
 
 .skills .title {
-  font-size: 60px;
+  font-size: 10vw;
   text-align: center;
 }
 
@@ -91,11 +91,11 @@ body {
 }
 
 .skills .category {
-  font-size: 30px;
+  font-size: 5vw;
 }
 
 .skills .item {
-  font-size: 30px;
+  font-size: 5vw;
 }
 
 .projects {
@@ -104,23 +104,23 @@ body {
 }
 
 .projects .title {
-  font-size: 60px;
+  font-size: 10vw;
   text-align: center;
 }
 
 .projects .name {
-  font-size: 40px;
+  font-size: 6vw;
   display: block;
   text-align: center;
 }
 
 .projects .technos {
-  font-size: 24px;
+  font-size: 4vw;
   text-align: center;
 }
 
 .projects .description {
-  font-size: 20px;
+  font-size: 3vw;
   margin: 0 auto;
   text-align: center;
   width: 60%;
@@ -132,17 +132,17 @@ body {
 }
 
 .contact .title {
-  font-size: 60px;
+  font-size: 10vw;
   text-align: center;
 }
 
 .contact .text {
-  font-size: 40px;
+  font-size: 5vw;
   text-align: center;
 }
 
 .contact .email {
-  font-size: 40px;
+  font-size: 5vw;
   text-align: center;
 }
 
