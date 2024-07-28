@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -62,11 +63,21 @@
     clip-path: inset(78% 0 43% 0);
   }
 }
+.intro-text {
+  font-size: 6vw;
+  font-family: "Orbitron";
+  text-align: center;
+}
+
 body {
   background-color: black;
   color: white;
 }
 
+@font-face {
+  font-family: "Cyberpunk";
+  src: url("Cyberpunk.otf");
+}
 .skills {
   background-color: grey;
   font-family: "Orbitron";
@@ -74,6 +85,7 @@ body {
 
 .skills .title {
   font-size: 10vw;
+  font-family: "Cyberpunk";
   text-align: center;
 }
 
@@ -104,14 +116,19 @@ body {
   src: url("Cyberpunk.otf");
 }
 .projects {
-  display: grid;
-  justify-items: center;
   background-color: grey;
   font-family: "Orbitron";
 }
 
+.project {
+  display: grid;
+  justify-items: center;
+}
+
 .projects .title {
   font-size: 10vw;
+  font-family: "Cyberpunk";
+  text-align: center;
 }
 
 .project-preview {
@@ -120,7 +137,7 @@ body {
 }
 
 .projects .name {
-  font-size: 6vw;
+  font-size: 8vw;
 }
 
 .projects .technos {
@@ -136,13 +153,19 @@ body {
 .projects .code {
   font-size: 6vw;
   font-family: "Cyberpunk";
+  padding: 0.5em;
 }
 
 .projects .live {
   font-size: 6vw;
   font-family: "Cyberpunk";
+  padding: 0.5em;
 }
 
+@font-face {
+  font-family: "Cyberpunk";
+  src: url("Cyberpunk.otf");
+}
 .contact {
   background-color: grey;
   font-family: "Orbitron";
@@ -152,14 +175,15 @@ body {
 
 .contact .title {
   font-size: 10vw;
+  font-family: "Cyberpunk";
 }
 
 .contact .text {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .contact .email {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 img {
