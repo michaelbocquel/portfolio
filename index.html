@@ -10,29 +10,29 @@
 	<body>
 		<section class="intro">
 			<h1 class="logo">nismo dev</h1>
-			<p class="intro-text">Aspiring creative front end developer</p>
+			<p class="intro-description">Aspiring creative front end developer</p>
 		</section>
 
 		<section class="skills">
-			<h2 class="title">Skills</h2>
-			<div class="container">
-				<div class="category-container">
-					<p class="category">front end</p>
+			<h2 class="skills-title">Skills</h2>
+			<div class="skills-container">
+				<div class="skills-category-container">
+					<p class="skills-category">front end</p>
 				</div>
-				<div class="item-container">
-					<p class="item">javascript css sass html</p>
+				<div class="skills-item-container">
+					<p class="skills-item">javascript css sass html</p>
 				</div>
-				<div class="item-container">
-					<p class="item">php symfony postgresql</p>
+				<div class="skills-item-container">
+					<p class="skills-item">php symfony postgresql</p>
 				</div>
-				<div class="category-container">
-					<p class="category">back end</p>
+				<div class="skills-category-container">
+					<p class="skills-category">back end</p>
 				</div>
-				<div class="category-container">
-					<p class="category">miscellaneous</p>
+				<div class="skills-category-container">
+					<p class="skills-category">miscellaneous</p>
 				</div>
-				<div class="item-container">
-					<p class="item">git github figma</p>
+				<div class="skills-item-container">
+					<p class="skills-item">git github figma</p>
 				</div>
 			</div>
 		</section>
@@ -49,8 +49,10 @@
 					architecto vitae hic esse cum sed magni voluptatem necessitatibus
 					quibusdam cupiditate dicta laudantium.
 				</p>
-				<button class="code">Code</button>
-				<button class="live">Live</button>
+				<div class="button-grid">
+					<button class="code">Code</button>
+					<button class="live">Live</button>
+				</div>
 			</div>
 
 			<div class="project">
@@ -67,6 +69,8 @@
 					architecto vitae hic esse cum sed magni voluptatem necessitatibus
 					quibusdam cupiditate dicta laudantium.
 				</p>
+			</div>
+			<div class="button-grid">
 				<button class="code">
 					<a
 						href="https://github.com/michaelbocquel/weather-app"
@@ -96,35 +100,38 @@
 					architecto vitae hic esse cum sed magni voluptatem necessitatibus
 					quibusdam cupiditate dicta laudantium.
 				</p>
-				<button class="code">
-					<a
-						href="https://github.com/michaelbocquel/cars-showroom"
-						target="_blank"
-						class="code-link"
-					>
-						Code
-					</a>
-				</button>
-				<button class="live">
-					<a
-						href="https://michaelbocquel.github.io/cars-showroom/"
-						target="_blank"
-						class="live-link"
-					>
-						Live
-					</a>
-				</button>
+				<div class="button-grid">
+					<button class="code">
+						<a
+							href="https://github.com/michaelbocquel/cars-showroom"
+							target="_blank"
+							class="code-link"
+						>
+							Code
+						</a>
+					</button>
+					<button class="live">
+						<a
+							href="https://michaelbocquel.github.io/cars-showroom/"
+							target="_blank"
+							class="live-link"
+						>
+							Live
+						</a>
+					</button>
+				</div>
 			</div>
 		</section>
 
 		<section class="contact">
-			<h2 class="title">Contact</h2>
-			<p class="text">Drop me an email</p>
-			<p class="email">michael.bocquel@gmail.com</p>
-			<img src="./icons/mail.svg" alt="" />
-			<p class="text">Reach me through my socials</p>
-			<img src="./icons/github.svg" alt="" />
-			<img src="./icons/linkedin.svg" alt="" />
+			<h2 class="contact-title">Contact</h2>
+			<p class="contact-email-text">Drop me an email</p>
+			<p class="contact-email">michael.bocquel@gmail.com</p>
+			<p class="contact-socials-text">Reach me through my socials</p>
+			<div class="icons-grid">
+				<a href="https://github.com/michaelbocquel" target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="Github icon" class="icon" /></a>
+				<a href="https://www.linkedin.com/in/michaelbocquel/" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="Linkedin icon" class="icon" /></a>
+			</div>
 		</section>
 	</body>
 </html>
