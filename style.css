@@ -99,6 +99,10 @@ body {
   font-size: 5vw;
 }
 
+@font-face {
+  font-family: "Cyberpunk";
+  src: url("Cyberpunk.otf");
+}
 .projects {
   display: grid;
   justify-items: center;
@@ -110,15 +114,12 @@ body {
   font-size: 10vw;
 }
 
+.project-preview {
+  width: 80%;
+  border-radius: 0.5em;
+}
+
 .projects .name {
-  font-size: 6vw;
-}
-
-.projects .code {
-  font-size: 6vw;
-}
-
-.projects .live {
   font-size: 6vw;
 }
 
@@ -130,6 +131,16 @@ body {
   font-size: 3vw;
   text-align: center;
   width: 60%;
+}
+
+.projects .code {
+  font-size: 6vw;
+  font-family: "Cyberpunk";
+}
+
+.projects .live {
+  font-size: 6vw;
+  font-family: "Cyberpunk";
 }
 
 .contact {
