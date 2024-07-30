@@ -18,7 +18,7 @@
   font-size: 12vw;
   font-family: "Cyberpunk";
   text-align: center;
-  margin: 0.5em 0;
+  margin: 0.25em 0 0.5em;
 }
 
 .logo::before,
