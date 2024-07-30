@@ -118,7 +118,7 @@ body {
   src: url("Cyberpunk.otf");
 }
 .projects {
-  background-color: grey;
+  background-color: black;
   font-family: "Orbitron";
 }
 
@@ -131,19 +131,25 @@ body {
   font-size: 10vw;
   font-family: "Cyberpunk";
   text-align: center;
+  color: #FFD700;
+  padding-top: 0.5em;
 }
 
 .project-preview {
-  width: 80%;
+  width: 70%;
   border-radius: 0.5em;
+  padding: 1em 0;
 }
 
 .projects .name {
   font-size: 8vw;
+  color: #00F0FF;
+  padding-top: 0.5em;
 }
 
 .projects .technos {
   font-size: 4vw;
+  color: #00F0FF;
 }
 
 .projects .description {
