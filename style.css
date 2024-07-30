@@ -93,7 +93,7 @@ body {
 }
 
 .skills-container {
-  border: 1px solid #ffd700;
+  border: 2px solid #00F0FF;
   width: 70vw;
   margin: 0 auto;
   display: grid;
@@ -103,6 +103,7 @@ body {
 }
 
 .skills-category {
+  color: #00F0FF;
   font-family: "Cyberpunk";
   font-size: 6vw;
   padding-bottom: 0.5em;
@@ -157,18 +158,22 @@ body {
   gap: 2em;
 }
 
-.projects .code {
+.code {
   font-size: 6vw;
   font-family: "Cyberpunk";
   padding: 0.25em 0.5em 0.5em;
   justify-self: end;
 }
 
-.projects .live {
+.live {
   font-size: 6vw;
   font-family: "Cyberpunk";
   padding: 0.25em 0.5em 0.5em;
   justify-self: start;
+}
+
+.code:hover, .live:hover {
+  color: #00F0FF;
 }
 
 @font-face {
@@ -176,7 +181,7 @@ body {
   src: url("Cyberpunk.otf");
 }
 .contact {
-  background-color: grey;
+  background-color: black;
   font-family: "Orbitron";
   display: grid;
   justify-items: center;
@@ -185,6 +190,8 @@ body {
 .contact-title {
   font-size: 10vw;
   font-family: "Cyberpunk";
+  color: #FFD700;
+  padding-bottom: 0.5em;
 }
 
 .contact-email-text, .contact-socials-text {
@@ -193,7 +200,8 @@ body {
 
 .contact-email {
   font-size: 4vw;
-  color: #ffd700;
+  color: #00F0FF;
+  padding: 0.25em 0 1em;
 }
 
 .icons-grid {
@@ -203,7 +211,7 @@ body {
 }
 
 .icon {
-  padding: 2em 0;
+  padding: 0.75em 0 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

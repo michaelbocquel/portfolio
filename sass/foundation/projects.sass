@@ -3,6 +3,8 @@
 @font-face
 	font-family: "Cyberpunk"
 	src: url("Cyberpunk.otf")
+
+$blue: #00F0FF
   
 .projects
 	background-color: grey
@@ -37,15 +39,17 @@
 	grid-template-columns: 1fr 1fr
 	gap: 2em
 
-.projects .code
+.code
 	font-size: 6vw
 	font-family: "Cyberpunk"
 	padding: .25em .5em .5em
 	justify-self: end
 
-.projects .live
+.live
 	font-size: 6vw
 	font-family: "Cyberpunk"
 	padding: .25em .5em .5em
 	justify-self: start
 
+.code:hover, .live:hover
+	color: $blue

@@ -3,9 +3,12 @@
 @font-face
 	font-family: "Cyberpunk"
 	src: url("Cyberpunk.otf")
+
+$yellow: #FFD700
+$blue: #00F0FF
   
 .contact
-	background-color: grey
+	background-color: black
 	font-family: "Orbitron"
 	display: grid
 	justify-items: center
@@ -13,13 +16,16 @@
 .contact-title
 	font-size: 10vw
 	font-family: "Cyberpunk"
+	color: $yellow
+	padding-bottom: .5em
 
 .contact-email-text, .contact-socials-text
 	font-size: 4vw
 
 .contact-email
 	font-size: 4vw
-	color: #ffd700
+	color: $blue
+	padding: .25em 0 1em
 
 .icons-grid	
 	display: grid
@@ -27,4 +33,4 @@
 	gap: 1.5em
 
 .icon
-	padding: 2em 0
+	padding: .75em 0 2em
