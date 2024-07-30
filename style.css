@@ -18,7 +18,7 @@
   font-size: 12vw;
   font-family: "Cyberpunk";
   text-align: center;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 
 .logo::before,
@@ -67,6 +67,7 @@
   font-size: 6vw;
   font-family: "Orbitron";
   text-align: center;
+  padding-bottom: 1em;
 }
 
 body {
