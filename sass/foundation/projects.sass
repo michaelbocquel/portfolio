@@ -24,7 +24,7 @@ $blue: #00F0FF
 
 .project-preview
 	width: 70%
-	border-radius: .5em
+	border-radius: .5em 
 	padding: 0 0 1em
 
 .projects .name
@@ -60,5 +60,11 @@ $blue: #00F0FF
 	padding: .25em .5em .5em
 	justify-self: start
 
-.code:hover, .live:hover
+.code-link:link, .code-link:visited, .live-link:link, .live-link:visited
+	color: black
+
+.code-link:hover, .live-link:hover
 	color: $blue
+
+.invisible
+	display: none

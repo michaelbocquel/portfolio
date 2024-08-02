@@ -67,7 +67,15 @@
   font-size: 1.5em;
   font-family: "Orbitron";
   text-align: center;
-  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+.intro-description:last-child {
+  padding-bottom: 0.75em;
+}
+
+.blue {
+  color: #00F0FF;
 }
 
 body {
@@ -180,8 +188,16 @@ body {
   justify-self: start;
 }
 
-.code:hover, .live:hover {
+.code-link:link, .code-link:visited, .live-link:link, .live-link:visited {
+  color: black;
+}
+
+.code-link:hover, .live-link:hover {
   color: #00F0FF;
+}
+
+.invisible {
+  display: none;
 }
 
 @font-face {
