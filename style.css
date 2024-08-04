@@ -177,19 +177,22 @@ body {
 .code {
   font-size: 1.1em;
   font-family: "Cyberpunk";
-  padding: 0.25em 0.5em 0.5em;
   justify-self: end;
+  border: 0;
+  padding: 0.75em 0 0.75em;
 }
 
 .live {
   font-size: 1.1em;
   font-family: "Cyberpunk";
-  padding: 0.25em 0.5em 0.5em;
   justify-self: start;
+  border: 0;
+  padding: 0.75em 0 0.75em;
 }
 
 .code-link:link, .code-link:visited, .live-link:link, .live-link:visited {
   color: black;
+  padding: 0.5em 1em 0.5em;
 }
 
 .code-link:hover, .live-link:hover {
