@@ -192,7 +192,7 @@ body {
 
 .code-link:link, .code-link:visited, .live-link:link, .live-link:visited {
   color: black;
-  padding: 0.5em 1em 0.5em;
+  padding: 0.75em 1.25em 0.75em;
 }
 
 .code-link:hover, .live-link:hover {
