@@ -8,13 +8,13 @@
 	</head>
 
 	<body>
-		<section class="intro">
-			<h1 class="logo">nismo dev</h1>
-			<p class="intro-description">Aspiring</p>
-			<p class="intro-description blue">creative</p>
-			<p class="intro-description">front-end</p>
-			<p class="intro-description blue">developper</p>
-		</section>
+		<header class="header">
+			<h1 class="header__logo">nismo dev</h1>
+			<p class="header__description">Aspiring</p>
+			<p class="header__description--blue">creative</p>
+			<p class="header__description">front-end</p>
+			<p class="header__description--blue">developer</p>
+		</header>
 
 		<section class="skills">
 			<h2 class="skills-title">Skills</h2>
@@ -39,115 +39,109 @@
 			</div>
 		</section>
 
-		<section class="projects">
-			<h2 class="title">Projects</h2>
+		<section class="project">
+			<h2 class="project__title">Projects</h2>
 
-			<div class="project">
-				<p class="name">Book Shop</p>
-				<p class="technos">PHP</p>
-				<p class="technos">SYMFONY</p>
-				<p class="technos">POSTGRESQL</p>
-				<p class="description">
+			<div class="project__item">
+				<p class="project__name">Book Shop</p>
+				<p class="project__techno">PHP</p>
+				<p class="project__techno">SYMFONY</p>
+				<p class="project__techno">POSTGRESQL</p>
+				<p class="project__description">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
 					doloremque corporis ducimus, amet deleniti, dolorum veniam quo
 					architecto vitae hic esse cum sed magni voluptatem necessitatibus
 					quibusdam cupiditate dicta laudantium.
 				</p>
-				<div class="button-grid">
-					<button class="code-link invisible">Code</button>
-					<button class="live-link invisible">Live</button>
+				<div class="project__button__grid">
+					<button class="project__code__link project__invisible">Code</button>
+					<button class="project__live__link project__invisible">Live</button>
 				</div>
 			</div>
 
-			<div class="project">
-				<p class="name">Weather App</p>
+			<div class="project__item">
+				<p class="project__name">Weather App</p>
 				<img
 					src="previews/weather-app-preview.png"
 					alt=""
-					class="project-preview"
+					class="project__preview"
 				/>
-				<p class="technos">JAVASCRIPT</p>
-				<p class="technos">CSS</p>
-				<p class="technos">HTML</p>
-				<p class="description">
-					A website using weatherapi in order to get weather data of a specific location for today and the next two days.
+				<p class="project__techno">JAVASCRIPT</p>
+				<p class="project__techno">CSS</p>
+				<p class="project__techno">HTML</p>
+				<p class="project__description">
+					A website using weatherapi in order to get weather data of a specific
+					location for today and the next two days.
 				</p>
-			</div>
-			<div class="button-grid">
-				<button class="code">
+				<div class="project__button__grid">
 					<a
 						href="https://github.com/michaelbocquel/weather-app"
 						target="_blank"
-						class="code-link"
+						class="project__code__link"
 					>
 						Code
 					</a>
-				</button>
-				<button class="live">
 					<a
 						href="https://michaelbocquel.github.io/weather-app/"
 						target="_blank"
-						class="live-link"
+						class="project__live__link"
 					>
 						Live
 					</a>
-				</button>
-			</div>
+				</div> 
 
-			<div class="project">
-				<p class="name">Cars Showroom</p>
+			<div class="project__item">
+				<p class="project__name">Cars Showroom</p>
 				<img
 					src="previews/cars-showroom-preview.png"
 					alt=""
-					class="project-preview"
+					class="project__preview"
 				/>
-				<p class="technos">JAVASCRIPT</p>
-				<p class="technos">CSS</p>
-				<p class="technos">HTML</p>
-				<p class="description">
+				<p class="project__techno">JAVASCRIPT</p>
+				<p class="project__techno">CSS</p>
+				<p class="project__techno">HTML</p>
+				<p class="project__description">
 					A website presenting different statistics of Forza Motorsport cars.
 				</p>
-				<div class="button-grid">
-					<button class="code">
-						<a
-							href="https://github.com/michaelbocquel/cars-showroom"
-							target="_blank"
-							class="code-link"
-						>
-							Code
-						</a>
-					</button>
-					<button class="live">
-						<a
-							href="https://michaelbocquel.github.io/cars-showroom/"
-							target="_blank"
-							class="live-link"
-						>
-							Live
-						</a>
-					</button>
+				<div class="project__button__grid">
+					<a
+						href="https://github.com/michaelbocquel/cars-showroom"
+						target="_blank"
+						class="project__code__link"
+					>
+						Code
+					</a>
+					<a
+						href="https://michaelbocquel.github.io/cars-showroom/"
+						target="_blank"
+						class="project__live__link"
+					>
+						Live
+					</a>
 				</div>
 			</div>
 		</section>
 
 		<section class="contact">
-			<h2 class="contact-title">Contact</h2>
-			<p class="contact-email-text">Drop me an email</p>
-			<p class="contact-email">michael.bocquel@gmail.com</p>
-			<p class="contact-socials-text">Reach me through my socials</p>
-			<div class="icons-grid">
+			<h2 class="contact__title">Contact</h2>
+			<p class="contact__email__text">Drop me an email</p>
+			<p class="contact__email">michael.bocquel@gmail.com</p>
+			<p class="contact__socials__text">Reach me through my socials</p>
+			<div class="contact__icon__grid">
 				<a
 					href="https://github.com/michaelbocquel"
 					target="_blank"
 					rel="noopener noreferrer"
-					><img src="./icons/github.svg" alt="Github icon" class="icon"
-				/></a>
+					>
+					<img src="./icons/github.svg" alt="Github icon" class="contact__icon" />
+				</a>
 				<a
 					href="https://www.linkedin.com/in/michaelbocquel/"
 					target="_blank"
 					rel="noopener noreferrer"
-					><img src="./icons/linkedin.svg" alt="Linkedin icon" class="icon"
-				/></a>
+					>
+					<img src="./icons/linkedin.svg" alt="Linkedin icon" class="contact__icon" />
+				</a>
 			</div>
 		</section>
 	</body>

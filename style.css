@@ -1,28 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 @font-face {
   font-family: "Cyberpunk";
-  src: url("Cyberpunk.otf");
+  src: url("./fonts/Cyberpunk.otf");
 }
-.logo {
-  color: #ffd100;
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.header .header__logo {
+  color: #FFD700;
   position: relative;
   font-size: 3em;
   font-family: "Cyberpunk";
   text-align: center;
   margin: 0.25em 0 0.5em;
 }
-
-.logo::before,
-.logo::after {
+.header .header__logo::before,
+.header .header__logo::after {
   content: "nismo dev";
   position: absolute;
   top: 0px;
@@ -30,19 +72,16 @@
   width: 100%;
   height: 100%;
 }
-
-.logo::before {
+.header .header__logo::before {
   left: -6px;
   background: black;
   animation: glitch 1.3s infinite linear alternate-reverse;
 }
-
-.logo::after {
+.header .header__logo::after {
   left: -12px;
   background: black;
   animation: glitch 2.2s infinite linear alternate;
 }
-
 @keyframes glitch {
   0% {
     clip-path: inset(40% 0 61% 0);
@@ -63,44 +102,31 @@
     clip-path: inset(78% 0 43% 0);
   }
 }
-.intro-description {
+.header .header__description, .header .header__description--blue {
   font-size: 1.5em;
   font-family: "Orbitron";
   text-align: center;
   line-height: 1.5em;
+  color: #FFFFFF;
 }
-
-.intro-description:last-child {
+.header .header__description--blue {
+  color: #00F0FF;
+}
+.header .header__description:last-child, .header .header__description--blue:last-child {
   padding-bottom: 0.75em;
 }
 
-.blue {
-  color: #00F0FF;
-}
-
-body {
-  background-color: black;
-  color: white;
-}
-
-@font-face {
-  font-family: "Cyberpunk";
-  src: url("Cyberpunk.otf");
-}
 .skills {
-  background-color: black;
   font-family: "Orbitron";
 }
-
-.skills-title {
+.skills .skills-title {
   font-size: 2.5em;
   font-family: "Cyberpunk";
-  color: #ffd700;
+  color: #FFD700;
   text-align: center;
   padding: 0 0 0.75em;
 }
-
-.skills-container {
+.skills .skills-container {
   border: 2px solid #00F0FF;
   width: 70vw;
   margin: 0 auto;
@@ -109,135 +135,103 @@ body {
   padding: 1em;
   margin-bottom: 1em;
 }
-
-.skills-category {
+.skills .skills-container .skills-category {
   color: #00F0FF;
   font-family: "Cyberpunk";
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
-
-.skills-item {
+.skills .skills-container .skills-item {
   font-size: 1.1em;
-}
-
-@font-face {
-  font-family: "Cyberpunk";
-  src: url("Cyberpunk.otf");
-}
-.projects {
-  background-color: black;
-  font-family: "Orbitron";
+  color: #FFFFFF;
 }
 
 .project {
-  display: grid;
-  justify-items: center;
+  font-family: "Orbitron";
 }
-
-.projects .title {
+.project .project__title {
   font-size: 2.5em;
   font-family: "Cyberpunk";
   text-align: center;
   color: #FFD700;
   padding: 0.5em 0 0.5em;
 }
-
-.project-preview {
+.project .project__item {
+  display: grid;
+  justify-items: center;
+}
+.project .project__item .project__preview {
   width: 70%;
   border-radius: 0.5em;
   padding: 0 0 1em;
 }
-
-.projects .name {
+.project .project__item .project__name {
   font-size: 2em;
   color: #00F0FF;
   padding: 0 0 0.5em;
 }
-
-.projects .technos {
+.project .project__item .project__techno {
   font-size: 1.2em;
   color: #00F0FF;
 }
-
-.projects .description {
+.project .project__item .project__description {
   font-size: 1.1em;
   text-align: center;
   width: 60%;
+  color: #FFFFFF;
   padding: 0.5em 0 1em;
 }
-
-.button-grid {
+.project .project__item .project__button__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
   padding: 0 0 1.5em;
 }
-
-.code {
-  font-size: 1.1em;
+.project .project__item .project__button__grid .project__code__link:link,
+.project .project__item .project__button__grid .project__code__link:visited,
+.project .project__item .project__button__grid .project__live__link:link,
+.project .project__item .project__button__grid .project__live__link:visited {
   font-family: "Cyberpunk";
-  justify-self: end;
-  border: 0;
-  padding: 0.75em 0 0.75em;
-}
-
-.live {
-  font-size: 1.1em;
-  font-family: "Cyberpunk";
-  justify-self: start;
-  border: 0;
-  padding: 0.75em 0 0.75em;
-}
-
-.code-link:link, .code-link:visited, .live-link:link, .live-link:visited {
+  background-color: #FFFFFF;
   color: black;
   padding: 0.75em 1.25em 0.75em;
+  text-decoration: none;
 }
-
-.code-link:hover, .live-link:hover {
+.project .project__item .project__button__grid .project__code__link:hover,
+.project .project__item .project__button__grid .project__live__link:hover {
   color: #00F0FF;
 }
-
-.invisible {
+.project .project__item .project__button__grid .project__invisible {
   display: none;
 }
 
-@font-face {
-  font-family: "Cyberpunk";
-  src: url("Cyberpunk.otf");
-}
 .contact {
-  background-color: black;
   font-family: "Orbitron";
   display: grid;
   justify-items: center;
 }
-
-.contact-title {
+.contact .contact__title {
   font-size: 2.5em;
   font-family: "Cyberpunk";
   color: #FFD700;
   padding: 0 0 0.5em;
 }
-
-.contact-email-text, .contact-socials-text {
+.contact .contact__email__text,
+.contact .contact__socials__text {
   font-size: 1.2em;
+  color: #FFFFFF;
 }
-
-.contact-email {
+.contact .contact__email {
   font-size: 1.1em;
   color: #00F0FF;
   padding: 0.25em 0 1em;
 }
-
-.icons-grid {
+.contact .contact__icon__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5em;
 }
-
-.icon {
+.contact .contact__icon__grid .contact__icon {
   padding: 1em 0 2em;
 }
 
