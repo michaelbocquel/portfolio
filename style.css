@@ -73,12 +73,12 @@ input {
   height: 100%;
 }
 .header .header__logo::before {
-  left: -6px;
+  left: 12px;
   background: black;
   animation: glitch 1.3s infinite linear alternate-reverse;
 }
 .header .header__logo::after {
-  left: -12px;
+  left: -8px;
   background: black;
   animation: glitch 2.2s infinite linear alternate;
 }
@@ -119,14 +119,14 @@ input {
 .skills {
   font-family: "Orbitron";
 }
-.skills .skills-title {
+.skills .skills__title {
   font-size: 2.5em;
   font-family: "Cyberpunk";
   color: #FFD700;
   text-align: center;
   padding: 0 0 0.75em;
 }
-.skills .skills-container {
+.skills .skills__container {
   border: 2px solid #00F0FF;
   width: 70vw;
   margin: 0 auto;
@@ -135,13 +135,13 @@ input {
   padding: 1em;
   margin-bottom: 1em;
 }
-.skills .skills-container .skills-category {
+.skills .skills__container .skills__category {
   color: #00F0FF;
   font-family: "Cyberpunk";
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
-.skills .skills-container .skills-item {
+.skills .skills__container .skills__item {
   font-size: 1.1em;
   color: #FFFFFF;
 }
@@ -233,6 +233,97 @@ input {
 }
 .contact .contact__icon__grid .contact__icon {
   padding: 1em 0 2em;
+}
+
+@media (min-width: 600px) {
+  .header .header__logo {
+    font-size: 6em;
+  }
+  .header .header__description, .header .header__description--blue {
+    font-size: 2.5em;
+  }
+  .skills .skills__title {
+    font-size: 5em;
+  }
+  .skills .skills__container .skills__category {
+    font-size: 3em;
+  }
+  .skills .skills__container .skills__item {
+    font-size: 1.5em;
+  }
+  .project .project__title {
+    font-size: 5em;
+  }
+  .project .project__item .project__name {
+    font-size: 3em;
+  }
+  .project .project__item .project__techno {
+    font-size: 1.75em;
+  }
+  .project .project__item .project__description {
+    font-size: 1.25em;
+  }
+  .project .project__item .project__button__grid .project__code__link:link,
+  .project .project__item .project__button__grid .project__code__link:visited,
+  .project .project__item .project__button__grid .project__live__link:link,
+  .project .project__item .project__button__grid .project__live__link:visited {
+    font-size: 1.25em;
+  }
+  .contact .contact__title {
+    font-size: 5em;
+  }
+  .contact .contact__email__text,
+  .contact .contact__socials__text {
+    font-size: 1.5em;
+  }
+  .contact .contact__email {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 900px) {
+  .header .header__logo {
+    font-size: 9em;
+  }
+  .header .header__description, .header .header__description--blue {
+    font-size: 3em;
+  }
+  .skills .skills__title {
+    font-size: 6em;
+  }
+  .skills .skills__container .skills__category {
+    font-size: 3.5em;
+  }
+  .skills .skills__container .skills__item {
+    font-size: 1.75em;
+  }
+  .project .project__title {
+    font-size: 6em;
+  }
+  .project .project__item .project__name {
+    font-size: 4em;
+  }
+  .project .project__item .project__techno {
+    font-size: 2em;
+  }
+  .project .project__item .project__description {
+    font-size: 1.5em;
+  }
+  .project .project__item .project__button__grid .project__code__link:link,
+  .project .project__item .project__button__grid .project__code__link:visited,
+  .project .project__item .project__button__grid .project__live__link:link,
+  .project .project__item .project__button__grid .project__live__link:visited {
+    font-size: 1.5em;
+  }
+  .contact .contact__title {
+    font-size: 6em;
+  }
+  .contact .contact__email__text,
+  .contact .contact__socials__text {
+    font-size: 2em;
+  }
+  .contact .contact__email {
+    font-size: 2.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
