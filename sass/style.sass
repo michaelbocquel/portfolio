@@ -10,47 +10,61 @@ $ternary-color: #FFFFFF
 
 $button-background-color: #FFFFFF
 
-$layout-breakpoint-small: 600px
+$layout-breakpoint-small: 576px
 $layout-breakpoint-medium: 900px
 	
 @import libs/reset.sass
 
+.logo
+		color: $primary-color
+		text-align: center
+		position: relative 
+		font-size: 3em
+		font-family: "Cyberpunk"
+		margin: .25em 0 .5em
+.logo::before,
+.logo::after 
+	content: "nismo dev"
+.logo::before 
+	right: -13px
+	background: black
+	animation: glitch 1.3s infinite linear alternate-reverse
+.logo::after 
+	right: -8px 
+	background: black
+	animation: glitch 2.2s infinite linear alternate
+
+@keyframes glitch 
+	0% 
+		clip-path: inset(40% 0 61% 0)
+	20% 
+		clip-path: inset(92% 0 1% 0)
+	40% 
+		clip-path: inset(43% 0 1% 0)
+	60% 
+		clip-path: inset(25% 0 58% 0)
+	80% 
+		clip-path: inset(94% 0 7% 0)
+	100% 
+		clip-path: inset(78% 0 43% 0)
+
 .header
 	display: grid
 	justify-content: center
-	.header__logo
-			color: $primary-color 
-			position: relative 
-			font-size: 3em
-			font-family: "Cyberpunk"
-			margin: .25em 0 .5em
-	.header__logo::before,
-	.header__logo::after 
-		content: "nismo dev"
-		position: absolute
-	.header__logo::before 
-		right: -13px
-		background: black
-		animation: glitch 1.3s infinite linear alternate-reverse
-	.header__logo::after 
-		left: -8px 
-		background: black
-		animation: glitch 2.2s infinite linear alternate
-
-	@keyframes glitch 
-		0% 
-			clip-path: inset(40% 0 61% 0)
-		20% 
-			clip-path: inset(92% 0 1% 0)
-		40% 
-			clip-path: inset(43% 0 1% 0)
-		60% 
-			clip-path: inset(25% 0 58% 0)
-		80% 
-			clip-path: inset(94% 0 7% 0)
-		100% 
-			clip-path: inset(78% 0 43% 0)
-
+	.header__nav
+		margin-bottom: 1.5em
+		.header__nav__link
+			font-family: "Orbitron"
+			font-size: 1em
+			padding: .5em .75em
+			text-decoration: none
+			color: $ternary-color
+			border-right: 1px solid $secondary-color
+		.header__nav__link:hover
+			text-decoration: underline
+			color: $secondary-color
+		.header__nav__link:nth-last-child(1)
+			border-right: none
 	.header__description
 		font-size: 1.5em
 		font-family: "Orbitron"
@@ -73,7 +87,7 @@ $layout-breakpoint-medium: 900px
 		padding: 0 0 .75em
 	.skills__container
 		border: 2px solid $secondary-color
-		width: 70vw
+		width: 70%
 		margin: 0 auto
 		display: grid
 		text-align: center
@@ -88,52 +102,52 @@ $layout-breakpoint-medium: 900px
 			font-size:  1.1em
 			color: $ternary-color
 
-.project
+.projects
 	font-family: "Orbitron"
-	.project__title
+	.projects__title
 		font-size: 2.5em
 		font-family: "Cyberpunk"
 		text-align: center
 		color: $primary-color
 		padding: .5em 0 .5em
-	.project__item
+	.projects__item
 		display: grid
 		justify-items: center
-		.project__preview
+		.projects__preview
 			width: 70%
 			border-radius: .5em 
 			padding: 0 0 1em
-		.project__name
+		.projects__name
 			font-size: 2em
 			color: $secondary-color
 			padding: 0 0 .5em
-		.project__techno
+		.projects__techno
 			font-size: 1.2em
 			color: $secondary-color
-		.project__description
+		.projects__description
 			font-size: 1.1em
 			text-align: center
 			width: 60%
 			color: $ternary-color
 			padding: .5em 0 1em
-		.project__button__grid
+		.projects__button__grid
 			display: grid
 			grid-template-columns: 1fr 1fr
 			gap: 2em
 			padding: 0 0 1.5em
-			.project__code__link:link,
-			.project__code__link:visited,
-			.project__live__link:link, 
-			.project__live__link:visited
+			.projects__code__link:link,
+			.projects__code__link:visited,
+			.projects__live__link:link, 
+			.projects__live__link:visited
 				font-family: "Cyberpunk"
 				background-color: $button-background-color
 				color: black
 				padding: .75em 1.25em .75em
 				text-decoration: none
-			.project__code__link:hover, 
-			.project__live__link:hover
+			.projects__code__link:hover, 
+			.projects__live__link:hover
 				color: $secondary-color
-			.project__invisible
+			.projects__invisible
 				display: none
 
 .contact
@@ -161,9 +175,12 @@ $layout-breakpoint-medium: 900px
 			padding: 1em 0  2em
 
 @media (min-width: $layout-breakpoint-small)
+	.logo
+			font-size: 5em
 	.header
-		.header__logo
-			font-size: 6em
+		.header__nav
+			.header__nav__link
+				font-size: 1.75em
 		.header__description
 			font-size: 2.5em
 	.skills
@@ -174,21 +191,21 @@ $layout-breakpoint-medium: 900px
 				font-size: 3em
 			.skills__item
 				font-size: 1.5em
-	.project
-		.project__title
+	.projects
+		.projects__title
 			font-size: 5em
-		.project__item
-			.project__name
+		.projects__item
+			.projects__name
 				font-size: 3em 
-			.project__techno
+			.projects__techno
 				font-size: 1.75em 
-			.project__description
+			.projects__description
 				font-size: 1.25em
-			.project__button__grid
-				.project__code__link:link,
-				.project__code__link:visited,
-				.project__live__link:link, 
-				.project__live__link:visited
+			.projects__button__grid
+				.projects__code__link:link,
+				.projects__code__link:visited,
+				.projects__live__link:link, 
+				.projects__live__link:visited
 					font-size: 1.25em
 	.contact
 		.contact__title
@@ -201,7 +218,7 @@ $layout-breakpoint-medium: 900px
 
 @media (min-width: $layout-breakpoint-medium)
 	.header
-		.header__logo
+		.logo
 			font-size: 9em
 		.header__description
 			font-size: 3em
@@ -213,21 +230,21 @@ $layout-breakpoint-medium: 900px
 				font-size: 3.5em
 			.skills__item
 				font-size: 1.75em
-	.project
-		.project__title
+	.projects
+		.projects__title
 			font-size: 6em
-		.project__item
-			.project__name
+		.projects__item
+			.projects__name
 				font-size: 4em 
-			.project__techno
+			.projects__techno
 				font-size: 2em 
-			.project__description
+			.projects__description
 				font-size: 1.5em
-			.project__button__grid
-				.project__code__link:link,
-				.project__code__link:visited,
-				.project__live__link:link, 
-				.project__live__link:visited
+			.projects__button__grid
+				.projects__code__link:link,
+				.projects__code__link:visited,
+				.projects__live__link:link, 
+				.projects__live__link:visited
 					font-size: 1.5em
 	.contact
 		.contact__title

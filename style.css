@@ -55,32 +55,32 @@ input {
   border-radius: 0;
 }
 
-.header {
-  display: grid;
-  justify-content: center;
-}
-.header .header__logo {
+.logo {
   color: #FFD700;
+  text-align: center;
   position: relative;
   font-size: 3em;
   font-family: "Cyberpunk";
   margin: 0.25em 0 0.5em;
 }
-.header .header__logo::before,
-.header .header__logo::after {
+
+.logo::before,
+.logo::after {
   content: "nismo dev";
-  position: absolute;
 }
-.header .header__logo::before {
+
+.logo::before {
   right: -13px;
   background: black;
   animation: glitch 1.3s infinite linear alternate-reverse;
 }
-.header .header__logo::after {
-  left: -8px;
+
+.logo::after {
+  right: -8px;
   background: black;
   animation: glitch 2.2s infinite linear alternate;
 }
+
 @keyframes glitch {
   0% {
     clip-path: inset(40% 0 61% 0);
@@ -100,6 +100,28 @@ input {
   100% {
     clip-path: inset(78% 0 43% 0);
   }
+}
+.header {
+  display: grid;
+  justify-content: center;
+}
+.header .header__nav {
+  margin-bottom: 1.5em;
+}
+.header .header__nav .header__nav__link {
+  font-family: "Orbitron";
+  font-size: 1em;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-right: 1px solid #00F0FF;
+}
+.header .header__nav .header__nav__link:hover {
+  text-decoration: underline;
+  color: #00F0FF;
+}
+.header .header__nav .header__nav__link:nth-last-child(1) {
+  border-right: none;
 }
 .header .header__description, .header .header__description--blue {
   font-size: 1.5em;
@@ -127,7 +149,7 @@ input {
 }
 .skills .skills__container {
   border: 2px solid #00F0FF;
-  width: 70vw;
+  width: 70%;
   margin: 0 auto;
   display: grid;
   text-align: center;
@@ -145,62 +167,62 @@ input {
   color: #FFFFFF;
 }
 
-.project {
+.projects {
   font-family: "Orbitron";
 }
-.project .project__title {
+.projects .projects__title {
   font-size: 2.5em;
   font-family: "Cyberpunk";
   text-align: center;
   color: #FFD700;
   padding: 0.5em 0 0.5em;
 }
-.project .project__item {
+.projects .projects__item {
   display: grid;
   justify-items: center;
 }
-.project .project__item .project__preview {
+.projects .projects__item .projects__preview {
   width: 70%;
   border-radius: 0.5em;
   padding: 0 0 1em;
 }
-.project .project__item .project__name {
+.projects .projects__item .projects__name {
   font-size: 2em;
   color: #00F0FF;
   padding: 0 0 0.5em;
 }
-.project .project__item .project__techno {
+.projects .projects__item .projects__techno {
   font-size: 1.2em;
   color: #00F0FF;
 }
-.project .project__item .project__description {
+.projects .projects__item .projects__description {
   font-size: 1.1em;
   text-align: center;
   width: 60%;
   color: #FFFFFF;
   padding: 0.5em 0 1em;
 }
-.project .project__item .project__button__grid {
+.projects .projects__item .projects__button__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
   padding: 0 0 1.5em;
 }
-.project .project__item .project__button__grid .project__code__link:link,
-.project .project__item .project__button__grid .project__code__link:visited,
-.project .project__item .project__button__grid .project__live__link:link,
-.project .project__item .project__button__grid .project__live__link:visited {
+.projects .projects__item .projects__button__grid .projects__code__link:link,
+.projects .projects__item .projects__button__grid .projects__code__link:visited,
+.projects .projects__item .projects__button__grid .projects__live__link:link,
+.projects .projects__item .projects__button__grid .projects__live__link:visited {
   font-family: "Cyberpunk";
   background-color: #FFFFFF;
   color: black;
   padding: 0.75em 1.25em 0.75em;
   text-decoration: none;
 }
-.project .project__item .project__button__grid .project__code__link:hover,
-.project .project__item .project__button__grid .project__live__link:hover {
+.projects .projects__item .projects__button__grid .projects__code__link:hover,
+.projects .projects__item .projects__button__grid .projects__live__link:hover {
   color: #00F0FF;
 }
-.project .project__item .project__button__grid .project__invisible {
+.projects .projects__item .projects__button__grid .projects__invisible {
   display: none;
 }
 
@@ -234,9 +256,12 @@ input {
   padding: 1em 0 2em;
 }
 
-@media (min-width: 600px) {
-  .header .header__logo {
-    font-size: 6em;
+@media (min-width: 576px) {
+  .logo {
+    font-size: 5em;
+  }
+  .header .header__nav .header__nav__link {
+    font-size: 1.75em;
   }
   .header .header__description, .header .header__description--blue {
     font-size: 2.5em;
@@ -250,22 +275,22 @@ input {
   .skills .skills__container .skills__item {
     font-size: 1.5em;
   }
-  .project .project__title {
+  .projects .projects__title {
     font-size: 5em;
   }
-  .project .project__item .project__name {
+  .projects .projects__item .projects__name {
     font-size: 3em;
   }
-  .project .project__item .project__techno {
+  .projects .projects__item .projects__techno {
     font-size: 1.75em;
   }
-  .project .project__item .project__description {
+  .projects .projects__item .projects__description {
     font-size: 1.25em;
   }
-  .project .project__item .project__button__grid .project__code__link:link,
-  .project .project__item .project__button__grid .project__code__link:visited,
-  .project .project__item .project__button__grid .project__live__link:link,
-  .project .project__item .project__button__grid .project__live__link:visited {
+  .projects .projects__item .projects__button__grid .projects__code__link:link,
+  .projects .projects__item .projects__button__grid .projects__code__link:visited,
+  .projects .projects__item .projects__button__grid .projects__live__link:link,
+  .projects .projects__item .projects__button__grid .projects__live__link:visited {
     font-size: 1.25em;
   }
   .contact .contact__title {
@@ -280,7 +305,7 @@ input {
   }
 }
 @media (min-width: 900px) {
-  .header .header__logo {
+  .header .logo {
     font-size: 9em;
   }
   .header .header__description, .header .header__description--blue {
@@ -295,22 +320,22 @@ input {
   .skills .skills__container .skills__item {
     font-size: 1.75em;
   }
-  .project .project__title {
+  .projects .projects__title {
     font-size: 6em;
   }
-  .project .project__item .project__name {
+  .projects .projects__item .projects__name {
     font-size: 4em;
   }
-  .project .project__item .project__techno {
+  .projects .projects__item .projects__techno {
     font-size: 2em;
   }
-  .project .project__item .project__description {
+  .projects .projects__item .projects__description {
     font-size: 1.5em;
   }
-  .project .project__item .project__button__grid .project__code__link:link,
-  .project .project__item .project__button__grid .project__code__link:visited,
-  .project .project__item .project__button__grid .project__live__link:link,
-  .project .project__item .project__button__grid .project__live__link:visited {
+  .projects .projects__item .projects__button__grid .projects__code__link:link,
+  .projects .projects__item .projects__button__grid .projects__code__link:visited,
+  .projects .projects__item .projects__button__grid .projects__live__link:link,
+  .projects .projects__item .projects__button__grid .projects__live__link:visited {
     font-size: 1.5em;
   }
   .contact .contact__title {
