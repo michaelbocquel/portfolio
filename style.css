@@ -260,6 +260,9 @@ input {
   .logo {
     font-size: 5em;
   }
+  .header .header__nav {
+    margin-bottom: 3em;
+  }
   .header .header__nav .header__nav__link {
     font-size: 1.75em;
   }
